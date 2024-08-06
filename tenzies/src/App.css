@@ -1,0 +1,62 @@
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+}
+main {
+  height: 480px;
+  width: 480px;
+
+  font-family: "Karla", sans-serif;
+  color: #2b283a;
+
+  background-color: #f5f5f5;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.dice-container {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 25px;
+}
+
+.die {
+  font-size: 1.5rem;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.reroll-button {
+  font-size: 1.3rem;
+  min-width: 120px;
+  padding: 12px;
+  text-align: center;
+  background-color: #5035ff;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+  line-height: calc(19 / 16);
+  color: #fff;
+
+  transition: all ease 300ms;
+}
+
+.reroll-button:hover {
+  transform: scale(0.98);
+  filter: brightness(0.95);
+}
+
+.reroll-button:active {
+  transform: scale(0.96);
+  filter: brightness(0.8);
+}
